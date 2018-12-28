@@ -54,7 +54,7 @@ app.get('/frame', (req, res) => {
 		else {
 			for (var i = 0; i < result.length; i++) {
 
-				twet = twet + result[i].tweet +"<br>";
+				twet = twet + result[i].name +  " : " + result[i].tweet +"<br>";
 
 			}
 			res.send(twet);
